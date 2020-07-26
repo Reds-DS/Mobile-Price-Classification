@@ -17,32 +17,36 @@ Frameworks / Libraries
 
 Project Structure - Folders
 ----------------------------------------------------
-* input i.e datasets :
-       * `Mobile_train.csv` : Training data
-       * `Mobile_test.csv` : Test data
-       * `Mobile_train_fold.csv` : Training data with new column "kfold" (Cross-validation) `Cf.Create_folds.py`
-       * `mobile_train_modif.csv` : Training data after data wrangling & data engineering `Cf. EDA.ipynb` in notebook folder
-       * `mobile_test_modif.csv` :  Test data after data wrangling & data engineering `Cf. EDA.ipynb` in notebook folder
-       * `mobile_test_pred.csv` : Test data with predictions using model `xgb_2.bin` in models folder
+input i.e datasets :
+---------------------
+* `Mobile_train.csv` : Training data
+* `Mobile_test.csv` : Test data
+* `Mobile_train_fold.csv` : Training data with new column "kfold" (Cross-validation) `Cf.Create_folds.py`
+* `mobile_train_modif.csv` : Training data after data wrangling & data engineering `Cf. EDA.ipynb` in notebook folder
+* `mobile_test_modif.csv` :  Test data after data wrangling & data engineering `Cf. EDA.ipynb` in notebook folder
+* `mobile_test_pred.csv` : Test data with predictions using model `xgb_2.bin` in models folder
 
-* models : 
-       * `rf_{i}.bin` : RandomForestClassifier model with `i fold number`
-            * This model is used to select "important features"
-       * `xgb_{i}.bin` : XgboostClassifier model with `i fold number`
+models :
+------------------
+* `rf_{i}.bin` : RandomForestClassifier model with `i fold number`
+      * This model is used to select "important features"
+* `xgb_{i}.bin` : XgboostClassifier model with `i fold number`
 
-* notebooks : 
-       * `Check_data.ipynb` : verify data type, missing values, labels, categorical data etc .. 
-       * `EDA.ipynb` : exploratory data analysis
+notebooks : 
+------------------
+* `Check_data.ipynb` : verify data type, missing values, labels, categorical data etc .. 
+* `EDA.ipynb` : exploratory data analysis
 
-* src :
-       * `config.py` : Contain global variables, to avoid hardcoding in other files.
-       * `Create_folds.py` : Script for Cross-Validation using StratifiedKFold
-       * `Feature_Importance_Selection.py` : Script to choose "important" features based on random_forest algorithm
-       * `RandomSearch.py` : Script for parameter tuning using Random Search 
-       * `model_dispatcher.py` : models used in this project
-       * `train.py` : Script for training our model
-       * `test.py` : Script used to predict `price range` in the new dataset
-       * `run.sh` : Command to run Script with the right fold
+src :
+--------------------
+* `config.py` : Contain global variables, to avoid hardcoding in other files.
+* `Create_folds.py` : Script for Cross-Validation using StratifiedKFold
+* `Feature_Importance_Selection.py` : Script to choose "important" features based on random_forest algorithm
+* `RandomSearch.py` : Script for parameter tuning using Random Search 
+* `model_dispatcher.py` : models used in this project
+* `train.py` : Script for training our model
+* `test.py` : Script used to predict `price range` in the new dataset
+* `run.sh` : Command to run Script with the right fold
 
 
 Metrics - Score
@@ -53,4 +57,4 @@ Metrics - Score
 
 Run Project
 --------------------------------------
-* Use bash script `run.sh` by typing `sh run.sh` command in the terminal
+* Use bash script `run.sh` by typing `sh run.sh` command in terminal
