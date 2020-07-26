@@ -18,12 +18,12 @@ Frameworks / Libraries
 Project Structure - Folders
 ----------------------------------------------------
 * input i.e datasets :
-        * `Mobile_train.csv` : Training data
-        * `Mobile_test.csv` : Test data
-        * `Mobile_train_fold.csv` : Training data with new column "kfold" (Cross-validation) `Cf.Create_folds.py`
-        * `mobile_train_modif.csv` : Training data after data wrangling & data engineering `Cf. EDA.ipynb` in notebook folder
-        * `mobile_test_modif.csv` :  Test data after data wrangling & data engineering `Cf. EDA.ipynb` in notebook folder
-        * `mobile_test_pred.csv` : Test data with predictions using model `xgb_2.bin` in models folder
+       * `Mobile_train.csv` : Training data
+       * `Mobile_test.csv` : Test data
+       * `Mobile_train_fold.csv` : Training data with new column "kfold" (Cross-validation) `Cf.Create_folds.py`
+       * `mobile_train_modif.csv` : Training data after data wrangling & data engineering `Cf. EDA.ipynb` in notebook folder
+       * `mobile_test_modif.csv` :  Test data after data wrangling & data engineering `Cf. EDA.ipynb` in notebook folder
+       * `mobile_test_pred.csv` : Test data with predictions using model `xgb_2.bin` in models folder
 
 * models : 
         * `rf_{i}.bin` : RandomForestClassifier model with `i fold number`
