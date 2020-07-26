@@ -26,23 +26,23 @@ Project Structure - Folders
        * `mobile_test_pred.csv` : Test data with predictions using model `xgb_2.bin` in models folder
 
 * models : 
-        * `rf_{i}.bin` : RandomForestClassifier model with `i fold number`
+       * `rf_{i}.bin` : RandomForestClassifier model with `i fold number`
             * This model is used to select "important features"
-        * `xgb_{i}.bin` : XgboostClassifier model with `i fold number`
+       * `xgb_{i}.bin` : XgboostClassifier model with `i fold number`
 
 * notebooks : 
-        * `Check_data.ipynb` : verify data type, missing values, labels, categorical data etc .. 
-        * `EDA.ipynb` : exploratory data analysis
+       * `Check_data.ipynb` : verify data type, missing values, labels, categorical data etc .. 
+       * `EDA.ipynb` : exploratory data analysis
 
 * src :
-        * `config.py` : Contain global variables, to avoid hardcoding in other files.
-        * `Create_folds.py` : Script for Cross-Validation using StratifiedKFold
-        * `Feature_Importance_Selection.py` : Script to choose "important" features based on random_forest algorithm
-        * `RandomSearch.py` : Script for parameter tuning using Random Search 
-        * `model_dispatcher.py` : models used in this project
-        * `train.py` : Script for training our model
-        * `test.py` : Script used to predict `price range` in the new dataset
-        * `run.sh` : Command to run Script with the right fold
+       * `config.py` : Contain global variables, to avoid hardcoding in other files.
+       * `Create_folds.py` : Script for Cross-Validation using StratifiedKFold
+       * `Feature_Importance_Selection.py` : Script to choose "important" features based on random_forest algorithm
+       * `RandomSearch.py` : Script for parameter tuning using Random Search 
+       * `model_dispatcher.py` : models used in this project
+       * `train.py` : Script for training our model
+       * `test.py` : Script used to predict `price range` in the new dataset
+       * `run.sh` : Command to run Script with the right fold
 
 
 Metrics - Score
